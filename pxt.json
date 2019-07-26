@@ -1,0 +1,20 @@
+{
+    "name": "Blinker",
+    "version": "0.0.0",
+    "description": "Blinker ioT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "blinker.ts",
+        "test.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "preferredEditor": "tsprj"
+}
