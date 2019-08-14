@@ -90,7 +90,7 @@ namespace blinker {
 
     //% block="命令ID"
     export function get_id(): string {
-        return id;
+        return id.substr(1, id.length - 2);
     }
     //% block="命令参数"
     export function get_para(): string {
