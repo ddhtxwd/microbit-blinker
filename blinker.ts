@@ -63,6 +63,7 @@ namespace blinker {
     }
 
     function get_message(buf: string) {
+        step = 0
         for (let i = 0; i <= buf.length - 1; i++) {
             if (buf.charAt(i) == ":") {
                 if (step == 0) {
@@ -80,7 +81,6 @@ namespace blinker {
                 }
             }
         }
-        step = 0
     }
     //% block="接受命令"
     export function get_command(): void {
