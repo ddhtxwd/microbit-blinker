@@ -4,13 +4,6 @@
  * 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
  */
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
 /**
  * 自定义图形块
  */
@@ -59,6 +52,11 @@ namespace blinker {
 
     //% block="发送滑动条 名字：$name 数值：$num"
     export function sendbar(name: string, num: number) {
+        serial.writeLine("{\"" + name + "\":{\"val\":" + num.toString() + "}}")
+    }
+
+    //% block="发送数值 名字：$name 数值：$num"
+    export function sendvalue(name: string, num: number) {
         serial.writeLine("{\"" + name + "\":{\"val\":" + num.toString() + "}}")
     }
 
